@@ -19,6 +19,7 @@ public class Queen_Permuation {
 			if (board[i] == false) {
 				board[i] = true;
 				Print(board, tq, ans + "b" + i + "q" + qpsf, qpsf + 1);
+				board[i] = false;// Un-do
 			}
 
 		}
